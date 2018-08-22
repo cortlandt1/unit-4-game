@@ -1,11 +1,4 @@
-//variable to hold the current score
-//variable to track the number of wins, and that can be updated as the game is played
-//variable to track the number of losses, and that can be updated as the game is played
-//variable that hold the target score, and is displayed as html
-//create a function that randomly assigns a number amount to the crystals at the start of each game
-//create a reset function that resets once the game is lost or won current score, target score and reassigns
-// number amount to each crystal
-//create conditions for winning and losing
+
 
 let currentScore = 0
 let wins = 0
@@ -13,13 +6,7 @@ let losses = 0
 let targetScore = 0
 
 
-//function to assign number to crystals
-//  $('#crystal1').append(`
-//  data-crystal=${Math.floor(Math.random() * 25) }
-//  `)
-// function displayScore () {
-//     $('.goal').append(`Your target score to match is ${targetScore}`)
-// }
+
 
 
 //Creates the target score and appends it to the index.html
@@ -36,7 +23,7 @@ $('.scoreTotal').text(currentScore);
 //Functions for winning 
 function win () {
     wins++
-    alert('You Win!')
+    $('.win-message').append('You won!')
     $('.wins').text(wins)
     reset()
 }
@@ -103,8 +90,12 @@ function reset () {
     targetScore = Math.floor(Math.random() * 150) + 1
     $('.scoreTotal').text(currentScore);
     $('.goal').text(targetScore)
-    // $('.goal').append(`Your target score to match is ${targetScore}`)
 }
+   
+   
+   
+   
+    // $('.goal').append(`Your target score to match is ${targetScore}`)
 // $('#crystal1').on('click', function (){
 //     let crystalValue = $(this).attr('data-crystal')
 //     crystalValue = parseInt(crystalValue)
@@ -113,14 +104,17 @@ function reset () {
 //     console.log(crystalValue)
 // })
 
-
-
-
 //  $('.crystal').data (function() {
     
 //  })
 
-
+//function to assign number to crystals
+//  $('#crystal1').append(`
+//  data-crystal=${Math.floor(Math.random() * 25) }
+//  `)
+// function displayScore () {
+//     $('.goal').append(`Your target score to match is ${targetScore}`)
+// }
 
 
 
