@@ -1,0 +1,37 @@
+#crystal1 {
+    height: 300px;
+    width: 250px;
+}
+
+#crystal2 {
+    height: 300px;
+    width: 250px;
+}
+
+#crystal3 {
+    height: 300px;
+    width: 250px;
+}
+
+#crystal4 {
+    height: 300px;
+    width: 250px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.crystalRow {
+    display: flex;
+    justify-content: center;
+}
+
+.losses-container {
+    display: inline-flex
+}
+
+.win-container {
+    display: inline-flex;
+}
