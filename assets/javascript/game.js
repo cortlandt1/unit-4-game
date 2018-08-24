@@ -1,20 +1,16 @@
 
-
+//Declaring global variables
 let currentScore = 0
 let wins = 0
 let losses = 0
 let targetScore = 0
-
-
-
-
 
 //Creates the target score and appends it to the index.html
 targetScore = Math.floor(Math.random() * 150) + 1
 $('.goal').text(targetScore)
 
 //Generates the random numbers for the crystals
-let one = Math.floor(Math.random() * 25) + 1
+let one = Math.floor(Math.random() * 25) + 1 
 let two = Math.floor(Math.random() * 25) + 1
 let three = Math.floor(Math.random() * 25) + 1
 let four = Math.floor(Math.random() * 25) + 1
@@ -23,14 +19,15 @@ $('.scoreTotal').text(currentScore);
 //Functions for winning 
 function win () {
     wins++
-    $('.win-message').append('You won!')
+    $('.win-message').html('You won!')
     $('.wins').text(wins)
     reset()
 }
 //Function for losing
 function lose () {
     losses++
-    alert('You lose!')
+    $('.lose-message').html('You lost!')
+    // alert('You lose!')
     $('.losses').text(losses)
     reset()
 }
@@ -90,6 +87,10 @@ function reset () {
     targetScore = Math.floor(Math.random() * 150) + 1
     $('.scoreTotal').text(currentScore);
     $('.goal').text(targetScore)
+    setTimeout (function () {
+    $('.lose-message').html('')
+    $('.win-message').html('')
+},2000)
 }
    
    
