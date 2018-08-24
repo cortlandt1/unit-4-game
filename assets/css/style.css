@@ -1,0 +1,86 @@
+body {
+    background-image: url(../images/cavern-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(120, 0, 219);
+
+}
+
+.header {
+    color: white;
+}
+
+#paragraph {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#crystal1 {
+    height: 200px;
+    width: 175px;
+}
+
+#crystal2 {
+    height: 200px;
+    width: 175px;
+}
+
+#crystal3 {
+    height: 200px;
+    width: 175px;
+}
+
+#crystal4 {
+    height: 200px;
+    width: 175px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.crystalRow { 
+    margin-top: 230px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.losses-container {
+    color: white;
+    display: inline-flex
+}
+
+.win-container {
+    color: white;
+    display: inline-flex;
+}
+
+.total {
+    color: white;
+    /* width: 960px; */
+}
+
+
+.score {
+    color: white;
+    display: flex;
+}
+
+.target-score {
+    color: white;
+    display: flex;
+    just
+
+}
